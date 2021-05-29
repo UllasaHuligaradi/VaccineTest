@@ -1,36 +1,36 @@
-2021-05-30 00:37:05,345 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\EI11721\soapui-settings.xml]
-2021-05-30 00:37:07,068 INFO  [Reflections] Reflections took 89 ms to scan 2 urls, producing 75 keys and 160 values 
-2021-05-30 00:37:07,108 INFO  [Reflections] Reflections took 17 ms to scan 1 urls, producing 46 keys and 344 values 
-2021-05-30 00:37:07,121 INFO  [Reflections] Reflections took 9 ms to scan 1 urls, producing 11 keys and 17 values 
-2021-05-30 00:37:07,136 INFO  [Reflections] Reflections took 6 ms to scan 1 urls, producing 13 keys and 21 values 
-2021-05-30 00:37:07,354 INFO  [Reflections] Reflections took 164 ms to scan 13 urls, producing 341 keys and 1458 values 
-2021-05-30 00:37:07,364 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\soapui-swagger-plugin-2.2-dist.jar]
-2021-05-30 00:37:07,364 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\ready-mqtt-plugin-dist.jar]
-2021-05-30 00:37:07,518 INFO  [Reflections] Reflections took 31 ms to scan 2 urls, producing 75 keys and 160 values 
-2021-05-30 00:37:07,697 INFO  [Reflections] Reflections took 161 ms to scan 13 urls, producing 341 keys and 1458 values 
-2021-05-30 00:37:08,249 INFO  [Reflections] Reflections took 720 ms to scan 1 urls, producing 1492 keys and 5707 values 
-2021-05-30 00:37:08,277 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\ready-uxm-plugin-os-1.0.3.jar]
-2021-05-30 00:37:08,301 INFO  [Reflections] Reflections took 19 ms to scan 1 urls, producing 46 keys and 344 values 
-2021-05-30 00:37:08,412 INFO  [Reflections] Reflections took 702 ms to scan 1 urls, producing 1492 keys and 5707 values 
-2021-05-30 00:37:08,437 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\readyapi-postman-1.0.1.jar]
-2021-05-30 00:37:08,448 INFO  [Reflections] Reflections took 7 ms to scan 1 urls, producing 11 keys and 17 values 
-2021-05-30 00:37:08,880 INFO  [Reflections] Reflections took 569 ms to scan 1 urls, producing 1492 keys and 5707 values 
-2021-05-30 00:37:08,885 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\readyapi-swaggerhub-plugin-1.0.jar]
-2021-05-30 00:37:08,898 INFO  [Reflections] Reflections took 5 ms to scan 1 urls, producing 13 keys and 21 values 
-2021-05-30 00:37:09,005 INFO  [Reflections] Reflections took 550 ms to scan 1 urls, producing 1492 keys and 5707 values 
-2021-05-30 00:37:09,330 INFO  [Reflections] Reflections took 429 ms to scan 1 urls, producing 1492 keys and 5707 values 
-2021-05-30 00:37:09,338 INFO  [PluginManager] 5 plugins loaded in 1973 ms
-2021-05-30 00:37:09,338 INFO  [DefaultSoapUICore] All plugins loaded
-2021-05-30 00:37:12,106 INFO  [WsdlProject] Loaded project from [file:/C:/Users/EI11721/.jenkins/workspace/VaccineTest/Vaccine-readyapi-project.xml]
-2021-05-30 00:37:12,117 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Vaccine]
-2021-05-30 00:37:12,118 INFO  [SoapUITestCaseRunner] Running TestCase [CheckVaccine]
-2021-05-30 00:37:12,142 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CheckVaccine]
-2021-05-30 00:37:12,151 INFO  [SoapUITestCaseRunner] running step [CalendarByDistrict]
-2021-05-30 00:37:12,847 INFO  [SoapUITestCaseRunner] running step [GetVaccineSlots]
-2021-05-30 00:37:13,470 INFO  [log] No Vaccine Available de23bcfa-af70-4f73-8f65-bb463713fa86
-2021-05-30 00:37:13,618 INFO  [log] projectFile--Vaccine-readyapi-project.xml
-2021-05-30 00:37:13,640 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CheckVaccine], time taken: 1084ms, status: FINISHED
-2021-05-30 00:37:13,650 INFO  [SoapUITestCaseRunner] TestCase [CheckVaccine] finished with status [FINISHED] in 1084ms
-2021-05-30 00:37:13,655 WARN  [Tools] Could not delete temporary directory C:\Users\EI11721\AppData\Local\Temp\64c19246-2b1e-4fcd-8683-b2dbee32b513
-2021-05-30 00:37:13,661 WARN  [Tools] Could not delete temporary directory C:\Users\EI11721\AppData\Local\Temp\d30f437f-7a8e-4cf9-83af-c7c59d0333b4
-2021-05-30 00:37:13,661 WARN  [Tools] Could not delete temporary directory C:\Users\EI11721\AppData\Local\Temp\6d7bed97-7c48-45d6-9dfa-1ff7e1a2441b
+2021-05-30 00:38:05,021 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\EI11721\soapui-settings.xml]
+2021-05-30 00:38:06,877 INFO  [Reflections] Reflections took 83 ms to scan 2 urls, producing 75 keys and 160 values 
+2021-05-30 00:38:06,924 INFO  [Reflections] Reflections took 23 ms to scan 1 urls, producing 46 keys and 344 values 
+2021-05-30 00:38:06,937 INFO  [Reflections] Reflections took 7 ms to scan 1 urls, producing 11 keys and 17 values 
+2021-05-30 00:38:06,950 INFO  [Reflections] Reflections took 6 ms to scan 1 urls, producing 13 keys and 21 values 
+2021-05-30 00:38:07,182 INFO  [Reflections] Reflections took 171 ms to scan 13 urls, producing 341 keys and 1458 values 
+2021-05-30 00:38:07,206 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\ready-mqtt-plugin-dist.jar]
+2021-05-30 00:38:07,207 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\soapui-swagger-plugin-2.2-dist.jar]
+2021-05-30 00:38:07,359 INFO  [Reflections] Reflections took 36 ms to scan 2 urls, producing 75 keys and 160 values 
+2021-05-30 00:38:07,530 INFO  [Reflections] Reflections took 170 ms to scan 13 urls, producing 341 keys and 1458 values 
+2021-05-30 00:38:08,075 INFO  [Reflections] Reflections took 706 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-05-30 00:38:08,102 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\ready-uxm-plugin-os-1.0.3.jar]
+2021-05-30 00:38:08,127 INFO  [Reflections] Reflections took 19 ms to scan 1 urls, producing 46 keys and 344 values 
+2021-05-30 00:38:08,227 INFO  [Reflections] Reflections took 685 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-05-30 00:38:08,252 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\readyapi-postman-1.0.1.jar]
+2021-05-30 00:38:08,265 INFO  [Reflections] Reflections took 8 ms to scan 1 urls, producing 11 keys and 17 values 
+2021-05-30 00:38:08,712 INFO  [Reflections] Reflections took 578 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-05-30 00:38:08,718 INFO  [PluginManager] Adding plugin from [C:\Users\EI11721\.soapuios\plugins\readyapi-swaggerhub-plugin-1.0.jar]
+2021-05-30 00:38:08,728 INFO  [Reflections] Reflections took 4 ms to scan 1 urls, producing 13 keys and 21 values 
+2021-05-30 00:38:08,813 INFO  [Reflections] Reflections took 543 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-05-30 00:38:09,170 INFO  [Reflections] Reflections took 435 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-05-30 00:38:09,179 INFO  [PluginManager] 5 plugins loaded in 1972 ms
+2021-05-30 00:38:09,179 INFO  [DefaultSoapUICore] All plugins loaded
+2021-05-30 00:38:11,509 INFO  [WsdlProject] Loaded project from [file:/C:/Users/EI11721/.jenkins/workspace/VaccineTest/Vaccine-readyapi-project.xml]
+2021-05-30 00:38:11,517 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Vaccine]
+2021-05-30 00:38:11,517 INFO  [SoapUITestCaseRunner] Running TestCase [CheckVaccine]
+2021-05-30 00:38:11,532 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CheckVaccine]
+2021-05-30 00:38:11,537 INFO  [SoapUITestCaseRunner] running step [CalendarByDistrict]
+2021-05-30 00:38:12,089 INFO  [SoapUITestCaseRunner] running step [GetVaccineSlots]
+2021-05-30 00:38:12,730 INFO  [log] No Vaccine Available 58f29ba6-854f-4b82-b5b4-e42302ea4523
+2021-05-30 00:38:12,903 INFO  [log] projectFile--Vaccine-readyapi-project.xml
+2021-05-30 00:38:12,919 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CheckVaccine], time taken: 1062ms, status: FINISHED
+2021-05-30 00:38:12,927 INFO  [SoapUITestCaseRunner] TestCase [CheckVaccine] finished with status [FINISHED] in 1062ms
+2021-05-30 00:38:12,931 WARN  [Tools] Could not delete temporary directory C:\Users\EI11721\AppData\Local\Temp\45b8fc1c-c80a-4589-850c-de965d182a5a
+2021-05-30 00:38:12,937 WARN  [Tools] Could not delete temporary directory C:\Users\EI11721\AppData\Local\Temp\58b93bb1-cfba-4859-84a3-3bbe3db97e7d
+2021-05-30 00:38:12,939 WARN  [Tools] Could not delete temporary directory C:\Users\EI11721\AppData\Local\Temp\0888c6ce-f370-4554-81d3-97acd5104b44
