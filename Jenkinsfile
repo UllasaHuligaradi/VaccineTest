@@ -7,6 +7,7 @@ pipeline {
                 script{
                      
                     bat "git checkout main"
+					bat "git pull origin main"
 					
 					}
 
