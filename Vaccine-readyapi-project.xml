@@ -554,11 +554,11 @@ return hexString</script></con:config></con:testStep>
             <con:parameterOrder><con:entry>center_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
           </con:restRequest>
         </con:config>
-      </con:testStep><con:testStep type="groovy" name="Groovy Script" id="8b1ec8b3-0f88-4336-8497-8f00a245e8b1"><con:settings/><con:config><script>def projectFile = testRunner.getTestCase().getTestSuite().getProject().getPath()
+      </con:testStep><con:testStep type="groovy" name="Groovy Script" id="8b1ec8b3-0f88-4336-8497-8f00a245e8b1"><con:settings/><con:config><script>def projectFile = testRunner.getTestCase().getTestSuite().getProject().getResourceRoot() 
 
-def sep = File.separator
-def fileNameToRemove = projectFile.reverse().tokenize(sep)[0]
-projectFile =projectFile.replaceAll("${File.separator}${File.separator}${fileNameToRemove.reverse()}","")
+//def sep = File.separator
+//def fileNameToRemove = projectFile.reverse().tokenize(sep)[0]
+//projectFile =projectFile.replaceAll("${File.separator}${File.separator}${fileNameToRemove.reverse()}","")
 
 //projectFile = projectFile.replaceAll('\\\\','/')
 //projectFile = projectFile.replaceAll('//','/')
@@ -622,7 +622,7 @@ projectFile =projectFile.replaceAll("${File.separator}${File.separator}${fileNam
 def sep1 = "\\\\"
 projectFile =projectFile.replaceAll(sep1,"/")
 log.info "projectFile--$projectFile"
-new File("${projectFile}",'VaccineSlots.txt').withWriter('utf-8') { 
+new File('VaccineSlots.txt').withWriter('utf-8') { 
          writer -> writer.writeLine availableVaccineDetails 
       }  
 
@@ -671,4 +671,4 @@ new File("${projectFile}",'VaccineSlots.txt').withWriter('utf-8') {
   </con:eventHandlers>
   <con:authRepository/>
   <con:tags/>
-</con:soapui-project>
+<con:sensitiveInformation/></con:soapui-project>
