@@ -554,7 +554,23 @@ return hexString</script></con:config></con:testStep>
             <con:parameterOrder><con:entry>center_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
           </con:restRequest>
         </con:config>
-      </con:testStep><con:properties/>
+      </con:testStep><con:testStep type="groovy" name="Groovy Script" id="8b1ec8b3-0f88-4336-8497-8f00a245e8b1"><con:settings/><con:config><script>def projectFile = testRunner.getTestCase().getTestSuite().getProject().getPath()
+
+def sep = File.separator
+def fileNameToRemove = projectFile.reverse().tokenize(sep)[0]
+projectFile =projectFile.replaceAll("${File.separator}${fileNameToRemove.reverse()}","")
+
+projectFile = projectFile.replaceAll('\\\\','/')
+projectFile = projectFile.replaceAll('//','/')
+
+//def proc = "${projectFile}rungit.sh".execute()
+def sout = new StringBuffer(), serr = new StringBuffer()
+
+def proc ="${projectFile}rungit.sh".execute()
+
+proc.consumeProcessOutput(sout, serr)
+proc.waitForOrKill(1000)
+println sout</script></con:config></con:testStep><con:properties/>
       <con:reportParameters/>
     </con:testCase>
     <con:testCase id="bca20695-8446-4910-98f0-2e2f05c58b6d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CheckVaccine" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CalendarByDistrict" id="0fe93230-5fdd-450a-bd2f-291bc9fbf7ba">
@@ -591,18 +607,27 @@ cent.sessions.forEach{ sess->
 //	log.info sess
 	if(sess.min_age_limit == 18 && sess.available_capacity > 0 && sess.available_capacity_dose1 > 0){
 		
-		availableVaccineDetails += "center.name is ${cent.name}\r\n Center PinCode i ${cent.pincode}\r\n  Vaccine Type ${sess.vaccine} \r\n Available Capacity ${sess.available_capacity_dose1}\r\n Address ${cent.address}"		
+		availableVaccineDetails += "Vaccine Available at center.name is ${cent.name}\r\n Center PinCode i ${cent.pincode}\r\n  Vaccine Type ${sess.vaccine} \r\n Available Capacity ${sess.available_capacity_dose1}\r\n Address ${cent.address}"		
 	}	
 }
 //	availableVaccineDetails += "\r\ncenter.name is ${cent.name}***************************************************************************************************\r\n"
 }
 
 
-new File('C:/Ullasa/projects/VaccineTest','VaccineSlots.txt').withWriter('utf-8') { 
+def projectFile = testRunner.getTestCase().getTestSuite().getProject().getPath()
+
+def sep = File.separator
+def fileNameToRemove = projectFile.reverse().tokenize(sep)[0]
+projectFile =projectFile.replaceAll("${File.separator}${fileNameToRemove.reverse()}","")
+def sep1 = "\\\\"
+projectFile =projectFile.replaceAll(sep1,"/")
+log.info "projectFile--$projectFile"
+new File("${projectFile}",'VaccineSlots.txt').withWriter('utf-8') { 
          writer -> writer.writeLine availableVaccineDetails 
       }  
 
-      ]]></script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>OTP</con:name><con:value>364536</con:value></con:property></con:properties>
+
+ ]]></script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>OTP</con:name><con:value>364536</con:value></con:property></con:properties>
     <con:reportParameters/>
   </con:testSuite>
   <con:properties/>
