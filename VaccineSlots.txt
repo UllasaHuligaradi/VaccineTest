@@ -1,27 +1,5 @@
-No Vaccine Available 4aec4b54-2afc-4aba-a74d-560b0609ab60
-center.name is APOLLO HOSPITAL 1***************************************************************************************************
-
-center.name is ST MARTHAS HOSITAL BLOCK 1***************************************************************************************************
-center.name is St Johns Hospital
+No Vaccine Available 7f5ef6bc-5dc7-441f-8255-08c4dc05d9e1center.name is St Johns Hospital
  Center PinCode i 560034
   Vaccine Type COVISHIELD 
  Available Capacity 1
  Address Sarjapura Road
-center.name is St Johns Hospital***************************************************************************************************
-
-center.name is APOLLO CM FERTILITY -JP NAGAR***************************************************************************************************
-
-center.name is RXDX WHITE FIELD S1 P3***************************************************************************************************
-
-center.name is VIKRAM HOSPITAL Covi-s***************************************************************************************************
-
-center.name is Apollo Clinic Doddakannelli P3***************************************************************************************************
-
-center.name is Columbia Asia Sarjapur P3***************************************************************************************************
-
-center.name is ST THERESAS HOSPITAL***************************************************************************************************
-
-center.name is Mallige Hospital Block 1***************************************************************************************************
-
-center.name is Kangaroo Care Hospital***************************************************************************************************
-

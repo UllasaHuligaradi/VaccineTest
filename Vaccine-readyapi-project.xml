@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="83836d0c-e42a-48a1-a0f4-03805ed18a57" created="3.8.1" activeEnvironment="Default" name="Vaccine" resourceRoot="" updated="3.8.1 2021-05-25T17:56:21Z" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="VaccineTest"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="CheckVaccine"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings>
+  <con:interface xsi:type="con:RestService" id="1229cd8c-fd7e-405c-8a36-3da2e8bf7d59" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://cdn-api.co-vin.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    
+    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+      <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+    </con:endpoints>
+    <con:resource name="GenerateOTP" path="/api/v2/auth/public/generateOTP" id="178cd3b8-7b4c-4d51-94c3-2ec1c0675bd4">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="GenerateOTP" id="edf15869-ec3d-4011-b0df-255e6c3343a1" method="POST">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>accept</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>403</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>text/xml</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:gen="https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP">gen:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="generateOTP" id="bba05f7d-eb74-4c81-baaf-178e6675901c" mediaType="application/json" postQueryString="false">
+          <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request>{
+  "mobile": "8056255475"
+}</con:request>
+          <con:originalUri>https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="accept" value=" application/json"/>
+  <con:entry key="Content-Type" value=" application/json"/>
+</con:parameters>
+          <con:parameterOrder><con:entry>accept</con:entry><con:entry>Content-Type</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="ConfirmOTP" path="/api/v2/auth/public/confirmOTP" id="0d135f71-56fa-4d46-acd9-2a9b5d87ab1e">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="ConfirmOTP" id="036b1eb0-0f8d-441f-a4c5-d5f25aa33a8a" method="POST">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>accept</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>403</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="ConfirmOTP" id="b0937327-25f0-49f7-85c9-e08fc342e6b6" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request>{\r
+  "otp": "8691053672264e69620e7b140c0ef8c53e704551662f37c5788e95212a8c5509",\r
+  "txnId": "684d6081-827c-4f36-9aa1-81db6e3166ea"\r
+}</con:request>
+          <con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="accept" value=" application/json"/>
+  <con:entry key="Content-Type" value=" application/json"/>
+</con:parameters>
+          <con:parameterOrder><con:entry>accept</con:entry><con:entry>Content-Type</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="CalendarByPin" path="/api/v2/appointment/sessions/public/calendarByPin" id="aaa420c2-f56e-4de3-bd61-f2a8f2ae7e8d">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="CalendarByPin" id="a210223a-2d30-4439-837b-c7ce4b11bed0" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>pincode</con:name>
+            <con:value>560061</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>560061</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>date</con:name>
+            <con:value>29-05-2021</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>29-05-2021</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="CntreByPinCode" id="de8eaf9a-225c-41ba-8447-437be7d9bd81" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="29-05-2021"/>
+  <con:entry key="pincode" value="560061"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+</con:parameters>
+          <con:parameterOrder><con:entry>pincode</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="CalendarByPin 2" id="c06c9a0f-4f42-4f14-b335-80b000d8a098" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>pincode</con:name>
+            <con:value>560061</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>560061</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>date</con:name>
+            <con:value>29-05-2021</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>29-05-2021</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="get7DaysByPIN" id="50545a05-5a1e-4cd7-a575-434291a0637b" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="29-05-2021"/>
+  <con:entry key="pincode" value="560061"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+</con:parameters>
+          <con:parameterOrder><con:entry>pincode</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="States" path="/api/v2/admin/location/states" id="1596e8f5-a77e-4e13-bf58-9860ceb6a46e">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="States" id="ef2ddfef-080f-4fcb-9192-d89ecf7eec56" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>accept</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Accept-Language</con:name>
+            <con:value>hi_IN</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>403</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stat="https://cdn-api.co-vin.in/api/v2/admin/location/states">stat:Response</con:element></con:representation><con:request name="getState" id="e62660c5-4ce7-4dc5-9097-70cb000d6973" mediaType="application/json">
+          <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request/><con:originalUri>https://cdn-api.co-vin.in/api/v2/admin/location/states</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0"/>
+  <con:entry key="Accept-Language" value=" hi_IN"/>
+  <con:entry key="accept" value=" application/json"/>
+</con:parameters>
+          <con:parameterOrder><con:entry>accept</con:entry><con:entry>Accept-Language</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="16" path="/api/v2/admin/location/districts/16" id="33fc76c8-9843-4031-a21b-415daafbaf0c">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="16" id="a210b6d1-0305-45ff-bd02-a4e8be388138" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>accept</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Accept-Language</con:name>
+            <con:value>hi_IN</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://cdn-api.co-vin.in/api/v2/admin/location/districts/16">ns:Response</con:element></con:representation><con:request name="getDistricts" id="ff646df4-69cd-4b82-aa5d-055a811309f2" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="Accept-Language" value=" hi_IN"/>
+  <con:entry key="accept" value=" application/json"/>
+</con:parameters>
+          <con:parameterOrder><con:entry>accept</con:entry><con:entry>Accept-Language</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="FindByDistrict" path="/api/v2/appointment/sessions/public/findByDistrict" id="9a27344d-d0f8-4429-aa16-f0a9e3405072">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="FindByDistrict" id="7946108f-b73c-4b6f-9021-83831f909b47" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>district_id</con:name>
+            <con:value>294</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>294</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>date</con:name>
+            <con:value>31-03-2021</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>31-03-2021</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:fin="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict">fin:Response</con:element></con:representation><con:request name="getByDistrict" id="5bc6208e-c071-47e5-8f6d-2ed31b205997" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="31-03-2021"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="district_id" value="294"/>
+</con:parameters>
+          <con:parameterOrder><con:entry>district_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="CalendarByDistrict" path="/api/v2/appointment/sessions/public/calendarByDistrict" id="5c54c5f4-9e74-4e37-be11-941d966abb93">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="CalendarByDistrict" id="3d505273-e7c4-43b4-bdf7-c50cb2c752e0" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>district_id</con:name>
+            <con:value>294</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>294</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>date</con:name>
+            <con:value>31-03-2021</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>31-03-2021</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cal="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict">cal:Response</con:element></con:representation><con:request name="get7DaysByDistrict" id="123d56eb-ef81-425a-9d03-398cc3953b1d" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="31-03-2021"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="district_id" value="294"/>
+</con:parameters>
+          <con:parameterOrder><con:entry>district_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="CalendarByCenter" path="/api/v2/appointment/sessions/public/calendarByCenter" id="e9400aae-d743-4cb2-a1bf-73dc6b12d86d">
+      <con:settings/>
+      <con:parameters><con:parameter><con:name>User-Agent</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters>
+      <con:method name="CalendarByCenter" id="426cad94-e790-4d96-87d8-dde0641f97da" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>center_id</con:name>
+            <con:value>1234</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>1234</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>date</con:name>
+            <con:value>31-03-2021</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>31-03-2021</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="get7DaysByCentre" id="e7f2a288-4053-437b-baf8-a47ae77a3408" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+          <con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="31-03-2021"/>
+  <con:entry key="center_id" value="1234"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+</con:parameters>
+          <con:parameterOrder><con:entry>center_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="b6c3f1df-3267-49f9-87ee-c117bc42f86f" name="VaccineTest">
+    <con:description>The test suite generated for the REST service [https://cdn-api.co-vin.in]</con:description>
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="5692ec21-67f8-4d0a-a0b6-51ff38d93880" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="https://cdn-api.co-vin.in Test Case" searchProperties="true" timeout="0" maxResults="0" disabled="true">
+      <con:settings/>
+      
+      <con:testStep type="restrequest" name="generateOTP" id="e450ac7a-be66-4be7-ab8d-508791bbfd05"><con:settings/><con:config service="https://cdn-api.co-vin.in" methodName="GenerateOTP" resourcePath="/api/v2/auth/public/generateOTP" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="generateOTP" id="466788ed-8701-4e1a-a53b-d3d7922f0134" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://cdn-api.co-vin.in</con:endpoint><con:request>{
+  "mobile": "8056255475"
+}</con:request><con:originalUri>https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="Content-Type" value=" application/json"/>
+  <con:entry key="accept" value=" application/json"/>
+</con:parameters></con:restRequest></con:config></con:testStep>
+      <con:testStep type="groovy" name="getSHA256" id="4f43a0bb-5bae-4a06-964c-02681a890c48"><con:settings/><con:config><script>import java.math.BigInteger; 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest; 
+import java.security.NoSuchAlgorithmException; 
+
+String request = testRunner.getTestCase().getTestSuite().getPropertyValue("OTP")
+
+
+MessageDigest md = MessageDigest.getInstance("SHA-256");
+
+byte[] hash = md.digest(request.getBytes(StandardCharsets.UTF_8)); 
+
+BigInteger number = new BigInteger(1, hash);
+
+StringBuilder hexString = new StringBuilder(number.toString(16)); 
+
+while (hexString.length() &lt; 32) 
+        { 
+            hexString.insert(0, '0'); 
+        } 
+
+return hexString</script></con:config></con:testStep>
+      <con:testStep type="restrequest" name="/api/v2/auth/public/confirmOTP" id="ff9ee2d9-2dcd-432f-8e63-0aaff20d5c6d">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/auth/public/confirmOTP" methodName="ConfirmOTP" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/auth/public/confirmOTP" id="b0937327-25f0-49f7-85c9-e08fc342e6b6" mediaType="application/json" postQueryString="false">
+            <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request>{\r
+  "otp": "${getSHA256#result}",\r
+  "txnId": "${generateOTP#Response#$.txnId}"\r
+}</con:request>
+            <con:originalUri>https://cdn-api.co-vin.in/api/v2/auth/public/confirmOTP</con:originalUri><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0"/>
+  <con:entry key="accept" value=" application/json"/>
+  <con:entry key="Content-Type" value=" application/json"/>
+</con:parameters>
+            <con:parameterOrder><con:entry>accept</con:entry><con:entry>Content-Type</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="/api/v2/appointment/sessions/public/calendarByPin" id="43b8b39f-e92b-4e67-9b7f-a674d604567b">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/appointment/sessions/public/calendarByPin" methodName="CalendarByPin" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/appointment/sessions/public/calendarByPin" id="de8eaf9a-225c-41ba-8447-437be7d9bd81" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="29-05-2021"/>
+  <con:entry key="pincode" value="560061"/>
+  <con:entry key="User-Agent" value=""/>
+</con:parameters>
+            <con:parameterOrder><con:entry>pincode</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="/api/v2/appointment/sessions/public/calendarByPin 2" id="5d1cdc14-ec28-45b2-81de-4ffc6a1db282">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/appointment/sessions/public/calendarByPin" methodName="CalendarByPin 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/appointment/sessions/public/calendarByPin 2" id="50545a05-5a1e-4cd7-a575-434291a0637b" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="29-05-2021"/>
+  <con:entry key="pincode" value="560061"/>
+  <con:entry key="User-Agent" value=""/>
+</con:parameters>
+            <con:parameterOrder><con:entry>pincode</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="/api/v2/admin/location/states" id="95d5478b-092c-44da-9882-58e297663938">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/admin/location/states" methodName="States" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/admin/location/states" id="e62660c5-4ce7-4dc5-9097-70cb000d6973" mediaType="application/json">
+            <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cdn-api.co-vin.in/api/v2/admin/location/states</con:originalUri><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0"/>
+  <con:entry key="Accept-Language" value=" hi_IN"/>
+  <con:entry key="accept" value=" application/json"/>
+</con:parameters>
+            <con:parameterOrder><con:entry>accept</con:entry><con:entry>Accept-Language</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="/api/v2/admin/location/districts/16" id="aff205c8-d2c6-42b0-92d9-a1d6af8e4197">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/admin/location/districts/16" methodName="16" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/admin/location/districts/16" id="ff646df4-69cd-4b82-aa5d-055a811309f2" mediaType="application/json">
+            <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cdn-api.co-vin.in/api/v2/admin/location/districts/16</con:originalUri><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="Accept-Language" value=" hi_IN"/>
+  <con:entry key="accept" value=" application/json"/>
+</con:parameters>
+            <con:parameterOrder><con:entry>accept</con:entry><con:entry>Accept-Language</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="/api/v2/appointment/sessions/public/findByDistrict" id="fd73acf8-b35c-41b6-be15-40256eeaceda">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/appointment/sessions/public/findByDistrict" methodName="FindByDistrict" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/appointment/sessions/public/findByDistrict" id="5bc6208e-c071-47e5-8f6d-2ed31b205997" mediaType="application/json">
+            <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict</con:originalUri><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="31-03-2021"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0 "/>
+  <con:entry key="district_id" value="294"/>
+</con:parameters>
+            <con:parameterOrder><con:entry>district_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="/api/v2/appointment/sessions/public/calendarByDistrict" id="8f382f15-fa01-4dde-ab58-2ad1060ba4e2">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/appointment/sessions/public/calendarByDistrict" methodName="CalendarByDistrict" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/appointment/sessions/public/calendarByDistrict" id="123d56eb-ef81-425a-9d03-398cc3953b1d" mediaType="application/json">
+            <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict</con:originalUri><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="31-03-2021"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0"/>
+  <con:entry key="district_id" value="294"/>
+</con:parameters>
+            <con:parameterOrder><con:entry>district_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep><con:testStep type="restrequest" name="/api/v2/appointment/sessions/public/calendarByCenter" id="865200bb-5431-4be2-8d02-24ec1b81c890">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/appointment/sessions/public/calendarByCenter" methodName="CalendarByCenter" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="/api/v2/appointment/sessions/public/calendarByCenter" id="e7f2a288-4053-437b-baf8-a47ae77a3408" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:parameters>
+  <con:entry key="date" value="31-03-2021"/>
+  <con:entry key="center_id" value="1234"/>
+  <con:entry key="User-Agent" value=""/>
+</con:parameters>
+            <con:parameterOrder><con:entry>center_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep><con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="bca20695-8446-4910-98f0-2e2f05c58b6d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CheckVaccine" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CalendarByDistrict" id="0fe93230-5fdd-450a-bd2f-291bc9fbf7ba">
+        <con:settings/>
+        <con:config service="https://cdn-api.co-vin.in" resourcePath="/api/v2/appointment/sessions/public/calendarByDistrict" methodName="CalendarByDistrict" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="CalendarByDistrict" id="123d56eb-ef81-425a-9d03-398cc3953b1d" mediaType="application/json">
+            <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
+            <con:endpoint>https://cdn-api.co-vin.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict</con:originalUri><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="date" value="31-05-2021"/>
+  <con:entry key="User-Agent" value="PostmanRuntime/7.28.0"/>
+  <con:entry key="district_id" value="294"/>
+</con:parameters>
+            <con:parameterOrder><con:entry>district_id</con:entry><con:entry>date</con:entry><con:entry>User-Agent</con:entry></con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep><con:testStep type="groovy" name="GetVaccineSlots" id="b6b04f6a-b472-44a5-92d4-1d6bdd5c027c"><con:settings/><con:config><script><![CDATA[import groovy.json.JsonSlurper
+
+String allSlotsSessions = context.expand( '${CalendarByDistrict#Response#$.centers[*].sessions[?(@.min_age_limit ==18 && @.available_capacity >0 )]}"}' )
+def availableVaccineDetails = "No Vaccine Available ${UUID.randomUUID().toString()}"
+log.info availableVaccineDetails
+String allCenters = context.expand( '${CalendarByDistrict#Response}' )
+
+def jsonResponse = new JsonSlurper().parseText(allCenters)
+
+def jsonExtract1 = jsonResponse.centers.forEach{ cent-> 
+
+cent.sessions.forEach{ sess->
+//	log.info sess
+	if(sess.min_age_limit == 18 && sess.available_capacity > 0 && sess.available_capacity_dose1 > 0){
+		
+		availableVaccineDetails += "center.name is ${cent.name}\r\n Center PinCode i ${cent.pincode}\r\n  Vaccine Type ${sess.vaccine} \r\n Available Capacity ${sess.available_capacity_dose1}\r\n Address ${cent.address}"		
+	}	
+}
+//	availableVaccineDetails += "\r\ncenter.name is ${cent.name}***************************************************************************************************\r\n"
+}
+
+
+new File('C:/Ullasa/projects/VaccineTest','VaccineSlots.txt').withWriter('utf-8') { 
+         writer -> writer.writeLine availableVaccineDetails 
+      }  
+
+      ]]></script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>OTP</con:name><con:value>364536</con:value></con:property></con:properties>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
