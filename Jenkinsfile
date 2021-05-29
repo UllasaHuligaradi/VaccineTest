@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script{
                      
-                    sh "git checkout main"
+                    cmd "git checkout main"
 					
 					}
 
@@ -16,7 +16,7 @@ pipeline {
         stage('Run SoapUI') {
             steps {
                 script{
-                   sh "'C:/Program Files/SmartBear/SoapUI-5.6.0/bin/testrunner.bat' -sVaccineTest -cCheckVaccine 'Vaccine-readyapi-project.xml' "
+                   cmd "'C:/Program Files/SmartBear/SoapUI-5.6.0/bin/testrunner.bat' -sVaccineTest -cCheckVaccine 'Vaccine-readyapi-project.xml' "
 
 
                 }
@@ -25,7 +25,7 @@ pipeline {
         stage('Git Push Report') {
             steps {
                 script{
-                   sh "gitrun.sh"
+                   cmd "gitrun.sh"
 
 
                 }
