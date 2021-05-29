@@ -1,8 +1,12 @@
-No Vaccine Available 67c8bac5-30be-4db6-bab9-ba5985eaa300
+No Vaccine Available 4aec4b54-2afc-4aba-a74d-560b0609ab60
 center.name is APOLLO HOSPITAL 1***************************************************************************************************
 
 center.name is ST MARTHAS HOSITAL BLOCK 1***************************************************************************************************
-
+center.name is St Johns Hospital
+ Center PinCode i 560034
+  Vaccine Type COVISHIELD 
+ Available Capacity 1
+ Address Sarjapura Road
 center.name is St Johns Hospital***************************************************************************************************
 
 center.name is APOLLO CM FERTILITY -JP NAGAR***************************************************************************************************
