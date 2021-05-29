@@ -1,5 +1,1 @@
-No Vaccine Available c529080f-94b4-4eb2-b603-faf36004d865center.name is St Johns Hospital
- Center PinCode i 560034
-  Vaccine Type COVISHIELD 
- Available Capacity 1
- Address Sarjapura Road
+No Vaccine Available f5e8d2a9-6e65-46c3-9aeb-b89d1d02eb63
