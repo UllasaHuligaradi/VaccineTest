@@ -558,19 +558,19 @@ return hexString</script></con:config></con:testStep>
 
 def sep = File.separator
 def fileNameToRemove = projectFile.reverse().tokenize(sep)[0]
-projectFile =projectFile.replaceAll("${File.separator}${fileNameToRemove.reverse()}","")
+projectFile =projectFile.replaceAll("${File.separator}${File.separator}${fileNameToRemove.reverse()}","")
 
-projectFile = projectFile.replaceAll('\\\\','/')
-projectFile = projectFile.replaceAll('//','/')
-
-//def proc = "${projectFile}rungit.sh".execute()
-def sout = new StringBuffer(), serr = new StringBuffer()
-
-def proc ="${projectFile}rungit.sh".execute()
-
-proc.consumeProcessOutput(sout, serr)
-proc.waitForOrKill(1000)
-println sout</script></con:config></con:testStep><con:properties/>
+//projectFile = projectFile.replaceAll('\\\\','/')
+//projectFile = projectFile.replaceAll('//','/')
+//
+////def proc = "${projectFile}rungit.sh".execute()
+//def sout = new StringBuffer(), serr = new StringBuffer()
+//
+//def proc ="${projectFile}rungit.sh".execute()
+//
+//proc.consumeProcessOutput(sout, serr)
+//proc.waitForOrKill(1000)
+//println sout</script></con:config></con:testStep><con:properties/>
       <con:reportParameters/>
     </con:testCase>
     <con:testCase id="bca20695-8446-4910-98f0-2e2f05c58b6d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CheckVaccine" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CalendarByDistrict" id="0fe93230-5fdd-450a-bd2f-291bc9fbf7ba">
@@ -618,7 +618,7 @@ def projectFile = testRunner.getTestCase().getTestSuite().getProject().getPath()
 
 def sep = File.separator
 def fileNameToRemove = projectFile.reverse().tokenize(sep)[0]
-projectFile =projectFile.replaceAll("${File.separator}${fileNameToRemove.reverse()}","")
+projectFile =projectFile.replaceAll("${File.separator}${File.separator}${fileNameToRemove.reverse()}","")
 def sep1 = "\\\\"
 projectFile =projectFile.replaceAll(sep1,"/")
 log.info "projectFile--$projectFile"
