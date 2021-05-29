@@ -17,7 +17,7 @@ pipeline {
         stage('Run SoapUI') {
             steps {
                 script{
-                   bat "'C:\\Program Files\\SmartBear\\SoapUI-5.6.0\\bin\\testrunner.bat' -sVaccineTest -cCheckVaccine 'Vaccine-readyapi-project.xml' "
+                   bat "'C:\\Program Files\\SmartBear\\SoapUI-5.6.0\\bin\\testrunner.bat' -sVaccineTest -cCheckVaccine 'Vaccine-readyapi-project.xml'"
 
 
                 }
