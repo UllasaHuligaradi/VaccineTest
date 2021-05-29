@@ -1,4 +1,4 @@
-No Vaccine Available 8d22e0f2-d748-44ed-8202-402b1bdc6cb5center.name is St Johns Hospital
+No Vaccine Available c2cb989a-080c-41b7-b59b-02e4e17206a4center.name is St Johns Hospital
  Center PinCode i 560034
   Vaccine Type COVISHIELD 
  Available Capacity 1
