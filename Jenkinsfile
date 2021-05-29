@@ -26,7 +26,7 @@ pipeline {
         stage('Git Push Report') {
             steps {
                 script{
-                   bat "gitrun.sh"
+                   bat "rungit.sh"
 
 
                 }
