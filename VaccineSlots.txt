@@ -1,8 +1,4 @@
-No Vaccine Available cde60a87-c466-4ba9-a801-04b77f67f826center.name is APOLLO HOSPITAL 1
- Center PinCode i 560076
-  Vaccine Type COVISHIELD 
- Available Capacity 0
- Address Imperial Hospital Research Centre Limited
+No Vaccine Available 9e4714be-d137-4b5e-98e9-d4f06a2925df
 ***************************************************************************************************
 
 ***************************************************************************************************
@@ -12,21 +8,13 @@ No Vaccine Available cde60a87-c466-4ba9-a801-04b77f67f826center.name is APOLLO H
 ***************************************************************************************************
 
 ***************************************************************************************************
-center.name is VIKRAM HOSPITAL Covi-s
- Center PinCode i 560001
-  Vaccine Type COVISHIELD 
- Available Capacity 0
- Address Millers Road Vasanthanagara
+
 ***************************************************************************************************
 
 ***************************************************************************************************
 
 ***************************************************************************************************
-center.name is ST THERESAS HOSPITAL
- Center PinCode i 560010
-  Vaccine Type COVISHIELD 
- Available Capacity 0
- Address DR RAJ KUMAR ROAD 1ST BLOCK RAJAJINAGAR BANGALORE
+
 ***************************************************************************************************
 
 ***************************************************************************************************
