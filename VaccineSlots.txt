@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-No Vaccine Available 30032ecb-f7b9-4daf-ad64-f170cdac7ff3
-=======
-No Vaccine Available 3df14113-f2bc-45d3-81f1-f8bc17f3cdb6
->>>>>>> 72e4982eb828bf69a8444085d23282b2ca8c4060
+No Vaccine Available f2f444e6-6451-4570-ac55-72cf0ff6f22e
